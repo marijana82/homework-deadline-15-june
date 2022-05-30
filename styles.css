@@ -32,11 +32,11 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     5. Media Queries
 ////////////////////////*/
 
-header {
+/*header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;*/
 }
 
 .wrapper {
@@ -44,38 +44,64 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid orange;
+    border: 3px solid orange;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    border: 2px solid green;
+    padding: 8px;
+    border: 5px dotted green;
 
 }
 
 ul {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    border: 2px solid red;
+    border: 5px solid red;
 }
 
 li {
     display: inline;
+    padding: 8px;
 }
 
 
-.text {
+.text-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    border: 3px solid orange;
 }
+
+.opening {
+    border: 5px dotted red;
+}
+.headlines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+    padding: 8px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    padding: 8px;
+
+}
+
+
 
 
 
