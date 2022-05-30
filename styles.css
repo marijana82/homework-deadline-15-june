@@ -32,12 +32,58 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     5. Media Queries
 ////////////////////////*/
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid orange;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid green;
+
+}
+
+ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    border: 2px solid red;
+}
+
+li {
+    display: inline;
+}
+
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+
+
+
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
-
-
 /* ------------------------------- 2. Typography ----------------------------------- */
-
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -48,6 +94,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
