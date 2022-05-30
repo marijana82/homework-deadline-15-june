@@ -101,6 +101,32 @@ li {
 
 }
 
+.rolling-stone {
+    display: flex;
+    flex-direction: row;
+    border: 5px dotted green;
+}
+
+.text-rolling-stone {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.variety {
+    display: flex;
+    flex-direction: row;
+    border: 5px dotted green;
+
+}
+
+.worth {
+    display: flex;
+    flex-direction: row;
+    border: 5px dotted green;
+}
+
 
 
 
