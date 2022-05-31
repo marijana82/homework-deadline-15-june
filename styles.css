@@ -31,20 +31,21 @@ Grijs #7A7A7A (voor de service-tegel tekst);
         etc.
     5. Media Queries
 ////////////////////////*/
-
-/*header {
+ header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;*/
+    align-items: center;
+     margin: 20px;
 }
 
-.wrapper {
+.navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 3px solid orange;
+    background-color: #4845E4;
 }
 
 nav {
@@ -55,6 +56,8 @@ nav {
     width: 100%;
     padding: 8px;
     border: 5px dotted green;
+    background-color: #4845E4;
+
 
 }
 
@@ -69,26 +72,48 @@ ul {
 li {
     display: inline;
     padding: 8px;
+
 }
 
 
-.text-header {
+.one {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px solid orange;
+    background-color: #4845E4;
 }
 
 .opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 5px dotted red;
+    padding: 20px;
+    background-color: #4845E4;
+    color: white;
+    padding: 100px;
+
 }
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .headlines {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px solid orange;
-    padding: 8px;
+    padding: 100px;
+    color: #4845E4;
 }
 
 .contact-us {
@@ -98,25 +123,45 @@ li {
     align-items: center;
     border: 3px solid blue;
     padding: 8px;
+    color: black;
 
 }
 
-.rolling-stone {
+.text-and-image {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: 5px dotted green;
 }
 
-.text-rolling-stone {
+
+
+.text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    border: 3px solid orchid;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+}
 
+.image {
+    border: 3px solid orchid;
+}
+
+img {
+    width: 500px;
 }
 
 .variety {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: 5px dotted green;
 
 }
@@ -124,7 +169,58 @@ li {
 .worth {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: 5px dotted green;
+}
+
+.small-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 300px;
+    margin: 8px;
+    padding: 20px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    margin: 8px;
+    padding: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    margin: 8px;
+    padding: 20px;
+}
+
+.icon {
+    width: 80px;
+}
+
+article {
+    border: 3px solid greenyellow;
+    padding: 20px;
+
+}
+
+h3 {
+    color: #5722CD;
 }
 
 
