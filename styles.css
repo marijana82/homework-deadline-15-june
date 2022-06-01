@@ -39,8 +39,8 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     flex-direction: row;
     /*justify-content: space-between;
     align-items: center;
-     margin: 20px;*/
-}
+     margin: 20px;
+} */
 
 .header-container {
     display: flex;
@@ -81,6 +81,7 @@ li {
 
 li a {
     color: white;
+    text-decoration: none;
 }
 
 
@@ -125,11 +126,21 @@ li a {
     padding-bottom: 20px;
 }
 
-/* button {} */
+button {
+    background-color: #ED4385;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    border: none;
+
+
+}
 
 .squiggle {
     width: 100px;
     height: 100px;
+    padding: 20px;
 }
 
 
@@ -141,35 +152,42 @@ li a {
     justify-content: center;
     align-items: center;
     border: 5px solid red;
+    height: 500px;
 }
 
 .introduction {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     color: #4845E4;
     border: 5px solid greenyellow;
     width: 700px;
+    height: 300px;
     padding: 20px;
-
+    text-align: center;
 }
 
-.introduction-sentences {
+.intro-sentences {
     padding: 20px;
     font-size: 25px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
 }
-
 
 .contact-us {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border: 3px solid blue;
+    width: 700px;
+    height: 70px;
     padding: 20px;
+    margin-top: 10px;
     color: black;
-
 }
 
 .text-and-image {
@@ -217,6 +235,8 @@ li a {
     border: 5px dotted green;
 }
 
+
+
 .small-icons {
     display: flex;
     flex-direction: row;
@@ -228,28 +248,25 @@ li a {
 .left {
     display: flex;
     flex-direction: column;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-basis: 300px;
-    margin: 8px;
-    padding: 20px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .middle {
     display: flex;
     flex-direction: column;
     flex-basis: 300px;
-    margin: 8px;
-    padding: 20px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     flex-basis: 300px;
-    margin: 8px;
-    padding: 20px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .icon {
