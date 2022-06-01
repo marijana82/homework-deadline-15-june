@@ -31,21 +31,26 @@ Grijs #7A7A7A (voor de service-tegel tekst);
         etc.
     5. Media Queries
 ////////////////////////*/
- header {
+
+/* --> header */
+
+/*.outer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;
     align-items: center;
-     margin: 20px;
+     margin: 20px;*/
 }
 
-.navigation {
+.header-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid orange;
+    /*margin-left: 20px;
+    margin-right: 20px;
     background-color: #4845E4;
+    /*border: 3px solid orange;*/
 }
 
 nav {
@@ -55,66 +60,106 @@ nav {
     align-items: center;
     width: 100%;
     padding: 8px;
-    border: 5px dotted green;
     background-color: #4845E4;
-
-
+    border: 3px solid yellow;
 }
 
 ul {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style-type: none;
-    border: 5px solid red;
+    border: 3px solid orangered;
 }
 
 li {
     display: inline;
-    padding: 8px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
 
+li a {
+    color: white;
 }
 
 
-.one {
+/*.some-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px solid orange;
     background-color: #4845E4;
-}
+    padding: 20px;
+}*/
 
 .opening {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px dotted red;
     padding: 20px;
     background-color: #4845E4;
     color: white;
-    padding: 100px;
-
+    border: 5px solid red;
 }
 
-.text-main {
+.opening-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    padding: 20px;
+}
+
+.title {
+    padding: 10px;
+    display: flex;
+    font-size: 35px;
+}
+
+.some-text {
+    padding-bottom: 20px;
+}
+
+/* button {} */
+
+.squiggle {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* --> main */
+
+.inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border: 5px solid red;
 }
 
-.headlines {
+.introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid orange;
-    padding: 100px;
     color: #4845E4;
+    border: 5px solid greenyellow;
+    width: 700px;
+    padding: 20px;
+
 }
+
+.introduction-sentences {
+    padding: 20px;
+    font-size: 25px;
+}
+
 
 .contact-us {
     display: flex;
@@ -122,7 +167,7 @@ li {
     justify-content: center;
     align-items: center;
     border: 3px solid blue;
-    padding: 8px;
+    padding: 20px;
     color: black;
 
 }
@@ -149,12 +194,10 @@ li {
     margin: 100px;
 }
 
-.image {
-    border: 3px solid orchid;
-}
 
-img {
-    width: 500px;
+.photos {
+    width: 600px;
+    height: 400px;
 }
 
 .variety {
@@ -214,7 +257,7 @@ img {
 }
 
 article {
-    border: 3px solid greenyellow;
+    border: 5px solid greenyellow;
     padding: 20px;
 
 }
