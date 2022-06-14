@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -29,6 +23,16 @@
 
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kleurvariabelen */
+
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 /*
@@ -93,6 +97,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    position: relative;
     /*border: 1px solid red;*/
 }
 
@@ -101,17 +106,56 @@ h3 {
     flex-basis: 1200px;
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 0 20px;
+    margin: 20px;
+    position: relative;
 
     /*als flex container*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*border: 1px solid blue;*/
 }
 
 
 /* --------------- 3.2 Other --------------------------- */
+
+/*test*/
+
+.triangle-header {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    /*height: 0;*/
+    border-top: 50px solid #4845E4;
+    border-left: 1400px solid transparent;
+    border-right: 20px solid #4845E4;
+
+    /*padding: 10px;*/
+
+}
+
+
+.triangle-main {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    /*height: 0;*/
+    border-top: 50px solid white;
+    border-left: 1400px solid transparent;
+    border-right: 20px solid white;
+}
+
+
+.triangle-services {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    /*height: 0;*/
+    border-top: 50px solid #F3F6F9;
+    border-left: 1400px solid transparent;
+    border-right: 20px solid #F3F6F9;
+}
+
+
 
 /* 3.3. Button - Header */
 
@@ -132,15 +176,19 @@ button {
 
 /* 3.5. Squiggle - Header */
 
-.squiggle-container {
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-    margin: 30px;
+
+.squiggle {
     position: relative;
-    right: 50px;
-    bottom:30px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid red;
 }
+
+
 
 
 /* 3.6. Squiggle - Main */
@@ -220,18 +268,21 @@ li a {
 .header-opening {
     width: 800px;
     text-align: center;
-    padding: 20px;
+    padding-top: 30px;
     margin: 10px;
     color: white;
-    border: 1px solid yellow;
 
+}
+
+.introduction-box {
+    padding-top: 100px;
 }
 
 .introduction {
     color: #5722CD;
     font-weight: bold;
     font-size: 28px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .question {
@@ -252,6 +303,7 @@ li a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 100px;
 }
 
 .main-text-container {
@@ -263,7 +315,6 @@ li a {
     flex-basis: 300px;
     padding: 30px 8px;
     margin: 8px;
-    border: 3px solid orchid;
 }
 
 .main-text-details {
@@ -279,7 +330,6 @@ li a {
     height: 300px;
     padding: 20px;
     text-align: center;
-    border: 5px solid greenyellow;
 }
 
 
@@ -288,7 +338,6 @@ li a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    border: 3px solid blue;
     width: 700px;
     height: 70px;
     padding: 20px;
@@ -320,8 +369,8 @@ li a {
     flex-basis: 400px;
     flex-grow: 1;
     flex-shrink: 1;
-    border: 2px solid orange;
     padding: 50px;
+    padding-top: 250px;
     margin: 50px;
 
 }
@@ -353,7 +402,6 @@ li a {
     align-items: center;
     box-sizing: border-box;
     background-color: #4845E4;
-    border: 3px solid olivedrab;
 }
 
 .footer-paragraph {
@@ -363,7 +411,6 @@ li a {
     align-items: center;
     padding: 20px;
     color: white;
-    border: 3px solid deeppink;
 }
 
 /* --------------- 4.8. Footer Form ------------------- */
@@ -375,7 +422,6 @@ li a {
     align-items: normal;
     width: 700px;
     padding: 20px;
-    border: 3px solid deeppink;
 }
 
 
@@ -437,100 +483,204 @@ input, textarea {
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+/* For Mobile Styles */
 
 @media screen and (max-width: 576px) {
 
+    /* Typography */
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+    }
+
+    h1 {
+        padding: 6px;
+        font-size: 18px;
+    }
+
+    h2 {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    h3 {
+        color: #5722CD;
+        padding-bottom: 10px;
+    }
+
+
+    .opening-text {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .introduction {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .question {
+        font-size: 12px;
+    }
+
+}
+
+    /* ------------------------------- 3. Layout --------------------------------------- */
+
+    /* --------------- 3.1 Reusables ----------------------- */
+
+
+@media screen and (max-width: 576px) {
+
+    .outer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        /*border: 1px solid red;*/
+    }
+
     .inner-container {
         /* als flex item */
-        flex-basis: 400px;
+        flex-basis: 500px;
         flex-grow: 0;
         flex-shrink: 1;
         margin: 0 20px;
-    }
 
-    header {
-        padding: 15px;
-    }
-
-    nav {
         /*als flex container*/
-        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
+
     }
+
+}
+
+    /* --------------- 3.2 Other --------------------------- */
+
+    /* 3.3. Button - Header */
+
+
+@media screen and (max-width: 576px) {
 
     button {
-
-        padding: 10px 20px;
+        background-color: #ED4385;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 35px;
+        text-transform: uppercase;
+        border: none;
     }
 
+    /* 3.4. Button - Footer */
+    .button-container {
+        text-align: center;
+    }
+
+    /* 3.5. Squiggle - Header */
     .squiggle-container {
         width: 20px;
         height: 20px;
         padding: 15px;
         margin: 15px;
         position: relative;
-        right: 25px;
-        bottom:15px;
+        right: 50px;
+        bottom: 30px;
     }
 
 
-    p {
-        font-size: 10px;
+    /* 3.6. Squiggle - Main */
+    .squiggle-line {
+        padding: 10px;
     }
 
-    h1 {
-        padding: 5px;
-        font-size: 18px;
+
+    /* 3.7. Main images */
+    .photos {
+        width: 100%;
+        box-shadow: 0 15px 25px rgba(118, 118, 118, 6);
+        margin: 20px 0;
     }
 
-    h2 {
-        padding: 5px;
-        font-size: 14px;
+    .image-wrapper {
+        flex-basis: 300px;
+        flex-grow: 0;
+        flex-shrink: 1;
     }
 
-    h3 {
-        padding-bottom: 10px;
+
+    /* 3.8. Service Tiles - small images */
+    .small-icon {
+        width: 40px;
+        padding: 10px;
     }
 
-    .opening-text {
+}
+
+    /* ------------------------------- 4. Areas ---------------------------------------- */
+
+    /* --------------- 4.1 Header ------------------------- */
+
+@media screen and (max-width: 576px) {
+
+header {
+        background-color: #4845E4;
         padding: 15px;
-        font-size: 10px;
+    }
+
+    /* --------------- 4.2 Navigation ------------------- */
+
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    li {
+        /*als flex item*/
+        padding: 10px;
+
+    }
+
+}
+
+    /* --------------- 4.3. Introduction ------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .header-opening {
+        width: 500px;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        color: white;
+
     }
 
     .introduction {
-        padding: 5px;
-        font-size: 10px;
+        color: #5722CD;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .question {
+        color: black;
         font-size: 10px;
     }
 
-
-.photos {
-    width: 100%;
-    box-shadow: 0 15px 25px rgba(118, 118, 118, 6);
-    margin: 20px 0;
-}
-
-.image-wrapper {
-    flex-basis: 300px;
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-
-    .small-icon {
-        width: 40px;
-        padding: 5px;
+    .question-link {
+        padding: 10px;
+        margin: 5px;
     }
 
+
+    /* --------------- 4.4. Main Text ------------------- */
     .main-text-image {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
@@ -539,14 +689,147 @@ input, textarea {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         flex-basis: 300px;
         padding: 30px 8px;
         margin: 8px;
-        border: 3px solid orchid;
     }
 
+
+}
+
+    /* --------------- 4.5. Main introduction blocks with text and image ------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .main-introduction {
+        color: #4845E4;
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    .main-contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 500px;
+        height: 70px;
+        padding: 20px;
+        margin-top: 10px;
+        color: black;
+    }
+
+
+    .main-paragraph {
+        padding: 5px;
+    }
+
+
+    /* --------------- 4.6. Service Tiles ------------------- */
+
+    .wrap-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: 2px solid orange;
+        padding: 50px;
+        margin: 50px;
+
+    }
+
+    .left, .middle, .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 2;
+        margin: 8px;
+        padding: 50px 20px;
+        border: 1px solid #5722CD;
+        box-shadow: 1px 1px 3px #7A7A7A;
+
+    }
+
+
+    /* --------------- 4.7. Footer ------------------- */
+
+
+    .footer-inner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #4845E4;
+    }
+
+    .footer-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: white;
+    }
+
+    /* --------------- 4.8. Footer Form ------------------- */
+
+    .footer-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: normal;
+        width: 500px;
+        padding: 20px;
+    }
+
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        box-sizing: border-box;
+        border: 1px solid darkblue;
+
+    }
+
+    .wrap-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+
+
+    /* --------------- 4.9. Footer End ------------------- */
+
+    .footer-closing-text {
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: black;
+        font-size: 12px;
+        padding: 15px;
+    }
 
 
 }
